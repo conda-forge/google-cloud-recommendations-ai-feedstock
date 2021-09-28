@@ -1,5 +1,5 @@
 {% set name = "google-cloud-recommendations-ai" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-recommendations-ai-{{ version }}.tar.gz
-  sha256: 010fe281c962b869be5cfea5a83fe4ac99baeb7578d23f558ed4ef611b0934b2
+  sha256: 0ef25ec5be6d626b84efe368163010389ef5ae6c1bd959c7df7ea2d38cc8fd23
 
 build:
   number: 0
@@ -20,12 +20,9 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - google-api-core >=1.26.0,<2.0.0dev
+    - google-api-core >=1.26.0,<3.0.0dev
     - packaging >=14.3
     - proto-plus >=1.15.0
-    # temporary constraint because of incorrect dependencies in
-    # https://github.com/conda-forge/google-api-core-feedstock/pull/74
-    - google-auth >=1.25.0,<2.0dev
 
 test:
   imports:
