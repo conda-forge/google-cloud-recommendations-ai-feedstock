@@ -1,5 +1,5 @@
 {% set name = "google-cloud-recommendations-ai" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-recommendations-ai-{{ version }}.tar.gz
-  sha256: a4bc3ca8121362ecbcb897e1f8a32d1cd8ccdf7278bda1d6cf8248d68a92c932
+  sha256: b0b414c3410178b431c1a4045dc5a8494085759e13ab2505a20de9aad49f4933
 
 build:
   number: 0
@@ -20,8 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - google-api-core >=1.26.0,<3.0.0dev
-    - packaging >=14.3
+    - google-api-core >=1.28.0,<3.0.0dev
     - proto-plus >=1.15.0
 
 test:
