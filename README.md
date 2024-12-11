@@ -7,7 +7,7 @@ Home: https://github.com/googleapis/python-recommendations-ai
 
 Package license: Apache-2.0
 
-Summary: Python Client for Recommendations AI
+Summary: Google Cloud Recommendations Ai API client library
 
 Development: https://github.com/googleapis/python-recommendations-ai
 
