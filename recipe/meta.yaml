@@ -12,7 +12,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
@@ -39,14 +39,14 @@ test:
     - pip
 
 about:
-  home: https://github.com/googleapis/python-recommendations-ai
+  home: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-recommendations-ai
   summary: Google Cloud Recommendations Ai API client library
   license: Apache-2.0
   license_file: LICENSE
   description: |
     Cloud Recommendations AI API: Deliver highly personalized product
     recommendations at scale.
-  dev_url: https://github.com/googleapis/python-recommendations-ai
+  dev_url: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-recommendations-ai
   doc_url: https://googleapis.dev/python/recommendationengine/latest/index.html
 
 extra:
