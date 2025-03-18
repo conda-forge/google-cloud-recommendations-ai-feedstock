@@ -1,5 +1,5 @@
 {% set name = "google-cloud-recommendations-ai" %}
-{% set version = "0.10.16" %}
+{% set version = "0.10.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/google_cloud_recommendations_ai-{{ version }}.tar.gz
-  sha256: 4565afefd75e63851ad1e99060799f7ccd8e5fcd4a234d59641eee29d95a6f24
+  sha256: 7b5fa821a2145b38bc0ec4f2445de85f954a889624ed15568cc35293835932f6
 
 build:
   number: 0
@@ -21,12 +21,12 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - google-api-core >=1.34.0,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,!=2.10.*
+    - google-api-core >=1.34.1,<3.0.0,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,!=2.10.*
     - google-api-core-grpc
-    - google-auth >=2.14.1,<3.0.0dev,!=2.24.0,!=2.25.0
+    - google-auth >=2.14.1,<3.0.0,!=2.24.0,!=2.25.0
     # more restrictive version for python >= 3.13
-    - proto-plus >=1.25.0,<2.0.0dev
-    - protobuf >=3.20.2,<6.0.0dev,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
+    - proto-plus >=1.25.0,<2.0.0
+    - protobuf >=3.20.2,<7.0.0,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
 
 test:
   imports:
