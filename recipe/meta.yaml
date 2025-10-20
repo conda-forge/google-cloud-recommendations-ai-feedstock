@@ -1,5 +1,5 @@
 {% set name = "google-cloud-recommendations-ai" %}
-{% set version = "0.10.18" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/google_cloud_recommendations_ai-{{ version }}.tar.gz
-  sha256: a6bccb45744fd89f038aa3e19502d1f46ea61c438dd2c08528533f8e185ec469
+  sha256: e2ce24abc419527e51c6ca3a14fb1a21a9d1f0bf5f8c47742997f73093cde195
 
 build:
   number: 0
