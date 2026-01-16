@@ -16,7 +16,6 @@ Documentation: https://googleapis.dev/python/recommendationengine/latest/index.h
 Cloud Recommendations AI API: Deliver highly personalized product
 recommendations at scale.
 
-
 Current build status
 ====================
 
